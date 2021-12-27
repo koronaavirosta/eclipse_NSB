@@ -103,6 +103,7 @@ CRY_NLR_fascism_ADJ:0 "Crystal"
 CRY_NLR_democratic:0 "Crystal Empire"
 CRY_NLR_democratic_DEF:0 "The Crystal Empire"
 CRY_NLR_democratic_ADJ:0 "Crystal"
+CRY_anarchy:0 "Frozen North"
 
 OLE_neutrality:0 "Kingdom of Olenia"
 OLE_fascism:0 "Olenian Rike"
