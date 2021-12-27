@@ -1,0 +1,24 @@
+
+state={
+	id=87
+	name="STATE_87"
+	state_category = pastoral
+
+	history={
+		owner = LSP
+		add_core_of = LSP
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			11029 1
+		}
+
+	}
+
+	provinces={
+		14 3094 6151 9103 9174 9204 11029 13210
+	}
+	manpower=16900
+	buildings_max_level_factor=1.000
+}

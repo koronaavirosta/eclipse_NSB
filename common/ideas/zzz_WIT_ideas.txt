@@ -1,0 +1,2072 @@
+ideas = {
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		WIT_generic_motorized_equipment_manufacturer = {
+
+			picture = generic_motorized_equipment_manufacturer_3
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+
+			traits = { motorized_equipment_manufacturer }
+		}
+
+		WIT_generic_infantry_equipment_manufacturer = {
+
+			picture = tokyo_arsenal
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				has_completed_focus = WIT_lakeish_arms_contract
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		WIT_generic_artillery_manufacturer = {
+
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				artillery = 0.10
+			}
+
+			traits = { artillery_manufacturer }
+		}
+	}
+
+	tank_manufacturer = {
+
+		designer = yes
+
+		WIT_Magic_Tank_Concern = {
+
+			allowed = {
+				original_tag = WIT
+			}
+
+			available = {
+				has_country_flag = WIT_Tank_Concern_Unlocked_Flag
+			}
+
+			research_bonus = {
+				armor = 0.10
+			}
+
+			cost = 150
+			removal_cost = 10
+
+
+			traits = { WIT_heavy_tank_manufacturer_Trait }
+
+		}
+
+		WIT_generic_tank_manufacturer = {
+
+			picture = generic_tank_manufacturer_1
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				armor = 0.10
+			}
+
+			traits = { tank_manufacturer }
+		}
+	}
+
+	naval_manufacturer = {
+
+		designer = yes
+
+		WIT_generic_naval_manufacturer = {
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+
+			traits = { naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		WIT_generic_light_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_1
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { light_aircraft_manufacturer }
+		}
+
+		WIT_generic_medium_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_3
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { medium_aircraft_manufacturer }
+		}
+
+		WIT_generic_heavy_aircraft_manufacturer = {
+
+			picture = generic_air_manufacturer_2
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { heavy_aircraft_manufacturer }
+		}
+
+		WIT_generic_naval_aircraft_manufacturer = {
+
+			picture = generic_naval_manufacturer_2
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				air_equipment = 0.10
+			}
+
+			traits = { naval_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+
+		WIT_generic_industrial_concern = {
+
+			picture = RCT_River_Oil_and_Rubber_State
+
+			allowed = {
+				can_form_river_fed = yes
+			}
+			visible = {
+				OR = {
+					original_tag = WIT
+					has_country_flag = RIV_annexed_WIT
+				}
+			}
+			available = {
+				has_completed_focus = WIT_import_rijekan_machinery
+				hidden_trigger = {
+					OR = {
+						original_tag = WIT
+						has_country_flag = RIV_annexed_WIT
+					}
+				}
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				synth_resources = 0.10
+				industry = 0.05
+			}
+			traits = { refinery_concern }
+		}
+
+		WIT_generic_electronics_concern = {
+
+			picture = generic_electronics_concern_1
+
+			allowed = {
+				original_tag = WIT
+			}
+
+			available = {
+				has_country_flag = WIT_Fair_Concern_Unlocked_Flag
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				electronics = 0.10
+			}
+
+			traits = { electronics_concern }
+		}
+	}
+
+	country = {
+		WIT_unicorn_parties = {
+
+			picture = EQC_school_for_unicorns
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				OR = {
+					has_government = communism
+					has_government = neutrality
+				}
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.15
+				political_advisor_cost_factor = -0.15
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.35
+				race_tech = -0.25
+			}
+		}
+		WIT_magical_weapon_mastery = {
+
+			picture = CRY_harmony_crystals
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				magical_equipment = {
+					build_cost_ic = -0.1
+					reliability = 0.15
+					instant = yes
+				}
+			}
+		}
+		WIT_overcharged_rifles_idea = {
+
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				magical_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.25
+					reliability = -0.05
+					instant = yes
+				}
+			}
+		}
+		WIT_mandatory_magical_training_idea = {
+
+			picture = magical_power
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				training_time_factor = -0.1
+			}
+		}
+		WIT_food_imports = {
+			picture = capital_outflow
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				MONTHLY_POPULATION = 0.20
+			}
+		}
+		WIT_terrace_farms = {
+			picture = generic_agrarian_society
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.30
+			}
+		}
+		WIT_centralized_banking = {
+			picture = generic_central_management
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		WIT_land_redistribution = {
+			picture = generic_agrarian_reform
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				stability_factor = 0.05
+				local_resources_factor = 0.1
+			}
+		}
+		WIT_empowered_monarchy = {
+			picture = HUN_hungarian_monarchy
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+			}
+		}
+		WIT_reorg_tagmata_idea = {
+			picture = pony_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				experience_gain_army_factor = 0.1
+			}
+		}
+		WIT_integrate_fyrds_idea = {
+			picture = pony_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				mobilization_speed = 0.1
+			}
+		}
+		WIT_new_bureaucracy_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				mobilization_laws_cost_factor = -0.25
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		WIT_privileges_curtailed = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		WIT_titular_nobility = {
+			picture = chi_wargaming_division
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat 
+					has_cosmetic_tag = WIT_GRU_puppet
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.10
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.20
+				race_tech = -0.10
+			}
+		}
+		WIT_disarray_idea = {
+			picture = chi_incompetent_officers
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				army_org_factor = -0.05
+				planning_speed = -0.5
+				max_planning = -0.25
+			}
+		}
+		WIT_blight_idea = {
+			picture = raj_risk_of_famine
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				MONTHLY_POPULATION = -1.5
+				weekly_manpower = -250
+			}
+		}
+		WIT_rust_idea = {
+			picture = generic_army_problems
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+			}
+
+			removal_cost = -1
+			modifier = {
+				attrition = 0.15
+			}
+		}
+		WIT_nimbusian_training = {
+			picture = NIM_warrior_society
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+			}
+
+			removal_cost = -1
+			modifier = {
+				special_forces_training_time_factor = 0.05
+				special_forces_defence_factor = 0.05
+				special_forces_attack_factor = 0.05
+				army_speed_factor = 0.05
+			}
+			research_bonus = {
+				pegasi_tech = 0.1
+			}
+		}
+		WIT_diplomatic_corps = {
+			picture = generic_flexible_foreign_policy2
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			modifier = {
+				opinion_gain_monthly_factor = 0.25
+				trade_opinion_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.75
+			}
+		}
+		WIT_royal_judiciary1 = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.3
+				consumer_goods_factor = -0.05
+			}
+		}
+		WIT_royal_judiciary2 = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				mobilization_laws_cost_factor = -0.25
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		WIT_payment_for_land = {
+			picture = ROM_king_carol_emptied_accounts
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				WIT = {
+					exists = yes
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		WIT_paying_for_land = {
+			picture = ROM_king_carol_emptied_accounts
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				WIT = {
+					exists = yes
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+		WIT_worker_protection = {
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		WIT_titular_nobility2 = {
+			picture = CRY_ponies_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_advisor_cost_factor = -0.10
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.10
+			}
+		}
+		WIT_elective_council_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.4
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				neutrality_drift = -0.01
+			}
+		}
+		WIT_parliament_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				mobilization_laws_cost_factor = -0.25
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = 0.1
+				democratic_drift = 0.01
+				communism_drift = 0.01
+				fascism_drift = 0.01
+			}
+		}
+		WIT_torchbearer_liberty_idea = {
+			picture = generic_democratic_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_divisions_required = -0.50
+				send_volunteer_size = 3
+				democratic_acceptance = 25
+			}
+		}
+		WIT_noble_allies = {
+			picture = generic_deal_with_the_devil2
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+			}
+		}
+		WIT_clean_ranks = {
+			picture = generic_intel_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = -0.15
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.35
+				race_tech = -0.25
+			}
+		}
+		WIT_privatised_banks = {
+			picture = generic_local_self_management
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.025
+			}
+		}
+		WIT_sold_land = {
+			picture = generic_agrarian_reform
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				local_resources_factor = 0.1
+				global_building_slots_factor = 0.15
+			}
+		}
+		WIT_examinations = {
+			picture = HUN_treaty_of_triannon
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.025
+				production_factory_start_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		WIT_finest_soldiers = {
+			picture = pony_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		WIT_advisory_council_idea = {
+			picture = HUN_hungarian_monarchy
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				neutrality_drift = -0.01
+			}
+		}
+		WIT_evaluations = {
+			picture = HUN_treaty_of_triannon
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.025
+				training_time_army_factor = -0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				army_leader_start_attack_level = 1
+				army_leader_start_planning_level = 1
+				army_leader_start_defense_level = 1
+				army_leader_start_logistics_level = 1
+			}
+		}
+		WIT_exploit_the_weak_idea = {
+			picture = pony_enslaved
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				local_resources_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		WIT_unicorn_master_race_idea = {
+
+			picture = EQC_school_for_unicorns
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_advisor_cost_factor = -0.15
+				modifier_army_sub_unit_unicorn_company_attack_factor = 0.25
+				modifier_army_sub_unit_unicorn_company_defence_factor = 0.25
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.45
+				race_tech = -0.30
+			}
+		}
+		WIT_all_races_have_potential_idea = {
+
+			picture = CRY_ponies_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				political_advisor_cost_factor = -0.15
+				special_forces_cap = 0.02
+				conscription_factor = 0.1
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.2
+				race_tech = -0.1
+			}
+		}
+		WIT_denounce_democrats_idea = {
+
+			picture = generic_fascism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.25 
+				democratic_acceptance = -50
+				democratic_drift = -0.02
+				send_volunteers_tension = -0.50
+				send_volunteer_divisions_required = -0.50
+				send_volunteer_size = 3
+			}
+		}
+		WIT_honoria_stop_youre_taking_it_too_far = {
+			picture = pony_militarization
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = -0.25
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				conscription_factor = -0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				experience_gain_army_factor = 0.15
+			}
+		}
+		WIT_empowered_council = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.05
+			}
+		}
+		WIT_noble_banks = {
+			picture = ROM_king_carol_emptied_accounts
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				consumer_goods_factor = -0.025
+			}
+		}
+		WIT_expanded_fyrds = {
+			picture = pony_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = -0.01
+				political_power_gain = 0.1
+			}
+		}
+		WIT_serfdoms_back_baby = {
+			picture = pony_enslaved
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				MONTHLY_POPULATION = -0.10
+				political_power_gain = -0.05
+				stability_factor = -0.1
+			}
+		}
+		WIT_bureau_of_barbarians_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				operative_slot = 1
+				enemy_operative_detection_chance_factor = 0.15
+				opinion_gain_monthly_factor = 0.15
+				improve_relations_maintain_cost_factor = -0.5
+				decryption_factor = 0.10
+			}
+		}
+		WIT_bureaucratic_nobles = {
+
+			picture = EQC_school_for_unicorns
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.025
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.4
+				race_tech = -0.25
+			}
+		}
+		WIT_workers_patron = {
+
+			picture = generic_production_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		WIT_divine_monarchy_idea = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				war_support_factor = 0.05
+				stability_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		WIT_abolished_nobility = {
+			picture = ROM_king_carol_ii_handled
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.025
+				political_advisor_cost_factor = 0.25
+			}
+		}
+		WIT_integrated_nobility = {
+			picture = EQC_school_for_unicorns
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.025
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.1
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.25
+				race_tech = -0.15
+			}
+		}
+		WIT_equal_nobility = {
+			picture = neutrality_idea
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+				political_advisor_cost_factor = -0.15
+			}
+
+			research_bonus = {
+				unicorn_tech = 0.05
+				race_tech = -0.05
+			}
+		}
+		WIT_peoples_army = {
+			picture = saf_soviet_advisers
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription = 0.03
+				army_org_factor = -0.1
+				experience_gain_army_factor = -0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+			}
+		}
+		WIT_deal_with_army = {
+			picture = generic_deal_with_the_devil
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_chief_cost_factor = -0.15
+				high_command_cost_factor = -0.15
+				army_org_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		WIT_army_reform = {
+			picture = generic_army
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				training_time_factor = -0.1
+				army_morale_factor = 0.1
+			}
+		}
+		WIT_r_atheism = {
+			picture = ast_abandon_the_westminster_system_communism
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.1
+				research_speed_factor = 0.025
+				army_morale_factor = -0.1
+			}
+		}
+		WIT_state_religion = {
+			picture = generic_religion
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.1
+				research_speed_factor = -0.025
+				army_morale_factor = 0.1
+			}
+		}
+		WIT_secular_state = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.025
+				political_power_gain = 0.025
+				research_speed_factor = 0.01
+				army_morale_factor = 0.025
+			}
+		}
+		WIT_republican_constitution = {
+			picture = HUN_treaty_of_triannon
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				army_core_defence_factor = 0.1
+				fascism_drift = -0.01
+			}
+		}
+		WIT_new_bureaucracy_rep = {
+			picture = generic_pp_unity_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		WIT_university_idea = {
+			picture = generic_research_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { has_cosmetic_tag = WIT_freistaat has_cosmetic_tag = WIT_GRU_puppet }
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		WIT_commie_agitation = {
+			picture = generic_communism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				WIT = {
+					exists = yes
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				communism_drift = 0.01
+				stability_factor = -0.05
+			}
+		}
+		WIT_commie_agitation_NIM = {
+			picture = generic_communism_drift_bonus
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				WIT = {
+					exists = yes
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.005 
+			}
+		}
+		WIT_land_and_freedom_idea = {
+			picture = generic_agrarian_reform
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = communism
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				stability_factor = 0.1
+				MONTHLY_POPULATION = 0.10
+				local_resources_factor = 0.1
+			}
+		}
+		WIT_socialized_factories = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = communism
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = -0.1
+			}
+		}
+		WIT_councils = {
+			picture = trotskyite_plot_purged
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = communism
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+		WIT_internationalism = {
+			picture = home_of_revolution
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = communism
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				send_volunteers_tension = -0.25
+				send_volunteer_divisions_required = -0.5
+				send_volunteer_size = 3
+				justify_war_goal_time = -0.25
+				communism_acceptance = 15
+			}
+		}
+		WIT_centrist_paramilitary_idea = {
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.15
+				conscription_factor = 0.1
+				drift_defence_factor = 0.25
+			}
+		}
+		WIT_revised_labour_laws = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				communism_drift = -0.01
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		WIT_economic_council_idea = {
+			picture = generic_political_support
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = -0.005
+				political_power_gain = 0.1
+				min_export = -0.05 
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		WIT_agriaid_idea = {
+			picture = generic_agrarian_reform
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = democratic
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.025
+				MONTHLY_POPULATION = 0.15
+				global_building_slots_factor = 0.1
+			}
+		}
+		WIT_defanged_government = {
+			picture = generic_local_self_management
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.1
+				surrender_limit = 0.1
+			}
+		}
+		WIT_trade_post_idea = {
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = {
+					has_government = communism
+					has_government = fascism
+				}
+				WIT = {
+					exists = yes
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			targeted_modifier = {
+				tag = WIT
+				trade_cost_for_target_factor = -0.15
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor  = -0.025
+				trade_opinion_factor = 0.1
+			}
+		}
+		WIT_slashed_taxes = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				consumer_goods_factor  = -0.025
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		WIT_right_to_bear_arms_idea = {
+			picture = HUN_secret_rearmament
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.33
+				mobilization_speed = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		WIT_privatised_welfare_idea = {
+			picture = hospital
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = neutrality
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+				consumer_goods_factor  = -0.025
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		WIT_technocratic_principles_idea = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no
+			}
+
+			available = {
+				has_government = fascism
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.025
+			}
+		}
+		WIT_grand_canal = {
+			picture = generic_foreign_capital
+			allowed = {
+				always = no
+			}
+
+			available = {
+				controls_state = 627
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+				consumer_goods_factor = -0.025
+			}
+		}
+		WIT_silver_mine = {
+			picture = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+
+			available = {
+				controls_state = 616
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.1
+			}
+		}
+		WIT_minimum_wage = {
+			picture = chi_hyper_inflation2
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		WIT_central_bank_idea = {
+			picture = ROM_king_carol_emptied_accounts
+			allowed = {
+				always = no
+			}
+
+			available = {
+				NOT = { 
+					has_cosmetic_tag = WIT_freistaat
+					has_cosmetic_tag = WIT_GRU_puppet
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		WIT_integration_idea = {
+			picture = anti_soviet_pact
+			available = {
+				is_subject = yes
+				overlord = { original_tag = WIT }
+			}
+
+			modifier = {
+				autonomy_gain = -10
+			}
+		}
+	}
+}

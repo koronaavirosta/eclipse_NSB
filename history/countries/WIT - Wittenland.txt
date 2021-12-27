@@ -1,0 +1,249 @@
+﻿capital = 617
+
+oob = "WIT_1007"
+
+set_research_slots = 3
+
+set_technology = {
+	pony_race = 1
+	melee_weapons = 1
+	melee_weapons1 = 1
+	infantry_weapons = 1
+	pre_gw_artillery = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_unicorn = 1
+}
+actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIGHT AFTER MAIN set_technology!
+
+set_cosmetic_tag = RIV_federation_mem
+
+add_ideas = {
+	pre_industrial_society
+	big_science_base
+	lack_of_scientists2
+	poverty3
+	WIT_unicorn_parties
+	RIV_member_state
+}
+
+set_country_flag = big_science_base_unlocked
+country_event = {
+	id = wittenland.1
+	days = 91
+}
+country_event = {
+	id = wittenland.150
+	days = 1095
+	random = 15000
+}
+random_list = {
+	50 = {}
+	50 = {
+		country_event = {
+			id = wittenland.144
+			days = 1460
+			random = 7500
+		}
+	}
+}
+add_ai_strategy = {
+	id = BAR
+	type = ignore_claim
+	value = 1
+}
+add_ai_strategy = {
+	id = ZES
+	type = ignore_claim
+	value = 1
+}
+add_ai_strategy = {
+	id = OLV
+	type = ignore_claim
+	value = 1
+}
+set_stability = 0.45
+set_war_support = 0.35
+
+set_popularities = {
+	democratic = 46
+	fascism = 13
+	communism = 7
+	neutrality = 34
+}
+set_politics = {
+
+	ruling_party = democratic
+}
+
+create_country_leader = {
+	name = "White Star"
+	desc = "POLITICS_WHITE_STAR_DESC"
+	picture = "WhiteStar.tga"
+	expire = "1965.1.1"
+	ideology = conservatism
+    female = yes
+	traits = {
+		popular_figurehead2
+	}
+}
+
+create_country_leader = {
+	name = "Wulfric Grey"
+	desc = "POLITICS_WULFRIC_DESC"
+	picture = "Lord_Wulfric.tga"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		anti_democrat
+	}
+}
+
+create_country_leader = {
+	name = "Voliare Gingerbeard"
+	desc = "POLITICS_VOLIARE_DESC"
+	picture = "Volaire.tga"
+	expire = "1965.1.1"
+	ideology = democratic_socialism
+	traits = {
+		democratic_sympathies
+	}
+}
+create_country_leader = {
+	name = "Honoria Goldmane"
+	desc = "POLITICS_HONORIA_DESC"
+	picture = "Honoria.tga"
+	expire = "1965.1.1"
+	ideology = magocracy
+    female = yes
+	traits = {
+		tenacious_negotiator
+	}
+
+}
+
+create_field_marshal = {
+	name = "Sigeweard Spellshield"
+	picture = "Mage_general.tga"
+	desc = "WIT_Sigeweard_desc"
+	traits = { pony_race_trait old_guard defensive_doctrine }
+	skill = 2
+	female = no
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1722
+}
+random_unit_leader = {
+	limit = { has_id = 1722}
+	save_global_event_target_as = WIT_Sigeweard
+}
+create_corps_commander = {
+	name = "Katherine Fertz"
+	picture = "Katherine.tga"
+	traits = { pony_race_trait trait_guard_general }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	female = yes
+	id = 1721
+}
+create_corps_commander = {
+	name = "Gilded Gale"
+	picture = "Gilded_Gale.tga"
+	traits = { pony_race_trait trait_reckless trait_engineer }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	female = yes
+}
+
+create_corps_commander = {
+	name = "Snowy Smarty"
+	desc = "WIT_Snowy_Smarty_desc"
+	traits = { pony_race_trait winter_specialist trickster }
+	picture = "Snowy_Smarty.tga"
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	id = 77777
+	female = yes #NOT A TRAP
+}
+if = {
+	limit = { has_dlc = "Waking the Tiger" }
+	create_corps_commander = {
+		name = "Fruity Loop"
+		picture = "Froot_Loops.tga"
+		traits = { pony_race_trait media_personality supply_raider }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 3
+		planning_skill = 1
+		logistics_skill = 4
+	}
+	else = {
+		create_corps_commander = {
+			name = "Fruity Loop"
+			picture = "Froot_Loops.tga"
+			traits = { pony_race_trait media_personality supply_raider_no_wtt }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+}
+
+create_corps_commander = {
+	name = "Marigold"
+	picture = "General_Marigold.tga"
+	traits = { pony_race_trait panzer_leader  }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+	female = yes
+}
+
+set_rule = {
+	can_generate_female_aces = yes
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+		transport = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+	}
+}
+
+generic_DD_template = yes
+generic_CL_template = yes

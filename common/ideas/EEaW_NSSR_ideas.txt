@@ -1,0 +1,191 @@
+ideas = {
+	country = {
+		NSSR_curse_of_eternal_night_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.3
+				local_resources_factor = -0.3
+			}
+		}
+	}
+
+	country = {
+		NSSR_curse_of_eternal_night1_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.25
+				production_speed_buildings_factor = -0.3
+				local_resources_factor = -0.3
+			}
+		}
+	}
+
+	country = {
+		NSSR_verge_of_famine_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				conscription_factor = -0.33
+			}
+		}
+	}
+
+	country = {
+		NSSR_verge_of_famine1_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				conscription_factor = -0.20
+			}
+		}
+	}
+
+	country = {
+		NSSR_verge_of_famine2_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.10
+				conscription_factor = -0.10
+			}
+		}
+	}
+
+	country = {
+		NSSR_a_dark_tomorrow_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.25
+				army_org_factor = -0.5
+				stability_factor = -0.33
+				war_support_factor = -0.33
+			}
+		}
+	}
+
+	country = {
+		NSSR_mechanized_prosperity_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+	}
+
+	country = {
+		NSSR_shine_of_the_northern_star_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.15
+			}
+		}
+	}
+
+	country = {
+		NSSR_shine_of_the_northern_star1_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.45
+				political_power_factor = 0.2
+				production_speed_buildings_factor = 0.15
+				conscription = 0.025
+			}
+		}
+	}
+
+	country = {
+		NSSR_red_army_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+	}
+
+	country = {
+		NSSR_red_army1_idea = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.2
+				defence = 0.1
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		}
+	}
+}

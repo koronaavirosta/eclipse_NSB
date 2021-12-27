@@ -1,0 +1,413 @@
+add_namespace = NSSR_event
+
+country_event = {
+	id = NSSR_event.1
+	title = NSSR_event.1.t
+	desc = NSSR_event.1.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.1.a
+		every_controlled_state = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+        }
+	}
+}
+
+country_event = {
+	id = NSSR_event.2
+	title = NSSR_event.2.t
+	desc = NSSR_event.2.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.2.a
+		243 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		239 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		153 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		166 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		75 = {
+            add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSSR_event.3
+	title = NSSR_event.3.t
+	desc = NSSR_event.3.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.3.a
+		187 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		184 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		231 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		230 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		349 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		226 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		232 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		227 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		228 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		661 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		662 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		653 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		67 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		333 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		229 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		159 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		158 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		157 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		154 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		155 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		156 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		326 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		160 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		162 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		164 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		161 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		163 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		167 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		168 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		237 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		233 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		332 = {
+			add_extra_state_shared_building_slots = 1
+		}
+		334 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		234 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		165 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		678 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		240 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		222 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		241 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		58 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		336 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		337 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		338 = {
+			add_extra_state_shared_building_slots = 3
+		}
+		335 = {
+			add_extra_state_shared_building_slots = 4
+		}
+		238 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		245 = {
+			add_extra_state_shared_building_slots = 5
+		}
+		329 = {
+			add_extra_state_shared_building_slots = 4
+		}
+    }
+}
+
+country_event = {
+	id = NSSR_event.4
+	title = NSSR_event.4.t
+	desc = NSSR_event.4.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.4.a
+		243 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		239 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		153 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		166 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		75 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+    }
+}
+
+country_event = {
+	id = NSSR_event.5
+	title = NSSR_event.5.t
+	desc = NSSR_event.5.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.5.a
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+            add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+}
+
+country_event = {
+	id = NSSR_event.6
+	title = NSSR_event.6.t
+	desc = NSSR_event.6.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.6.a
+    }
+}
+
+country_event = {
+	id = NSSR_event.7
+	title = NSSR_event.7.t
+	desc = NSSR_event.7.d
+	picture = report_event_technical
+
+	is_triggered_only = yes
+
+	option = {
+		name = NSSR_event.7.a
+    }
+	option = {
+		name = NSSR_event.7.b
+    }
+}

@@ -1,0 +1,17 @@
+focus_tree = {
+	id = nssr_start
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = STG
+		}
+	}
+
+	default = no
+	continuous_focus_position = { x = 550 y = 1800 }
+
+	shared_focus = NSSR_results_of_the_five_year_plan
+}

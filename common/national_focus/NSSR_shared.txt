@@ -1,0 +1,431 @@
+shared_focus = {
+	id = NSSR_results_of_the_five_year_plan
+	icon = GFX_results_of_the_five_year_plan
+
+	cost = 15
+	x = 3
+	y = 0
+
+	ai_will_do = {
+		factor = 5
+	}
+    select_effect = {
+        hidden_effect = {
+            country_event = { id = NSSR_event.1 days = 21 }
+            country_event = { id = NSSR_event.2 days = 42 }
+            country_event = { id = NSSR_event.3 days = 63 }
+            country_event = { id = NSSR_event.4 days = 84 }
+        }
+    }
+	completion_reward = {
+        country_event = { id = NSSR_event.5 days = 0 }
+	}
+}
+
+shared_focus = {
+	id = NSSR_the_road_ahead
+	icon = GFX_the_road_ahead
+
+	cost = 3
+	x = 0
+	y = 1
+    relative_position_id = NSSR_results_of_the_five_year_plan
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_results_of_the_five_year_plan }
+
+	completion_reward = {
+        add_stability = 0.2
+        add_popularity = {
+            ideology = communism
+            popularity = 0.1
+        }
+        add_popularity = {
+            ideology = syndicalism
+            popularity = 0.1
+        }
+	}
+}
+
+shared_focus = {
+	id = NSSR_nightskys_agrarian_reform
+	icon = GFX_focus_unknown
+
+	cost = 5
+	x = -2
+	y = 1
+    relative_position_id = NSSR_the_road_ahead
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_the_road_ahead }
+
+	completion_reward = {
+		swap_ideas = {
+  			remove_idea = NSSR_verge_of_famine_idea
+    		add_idea = NSSR_verge_of_famine1_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_unicorn_farmers
+	icon = GFX_unicorn_farmers
+
+	cost = 5
+	x = -1
+	y = 1
+    relative_position_id = NSSR_nightskys_agrarian_reform
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_nightskys_agrarian_reform }
+
+	completion_reward = {
+		swap_ideas = {
+  			remove_idea = NSSR_curse_of_eternal_night_idea
+    		add_idea = NSSR_curse_of_eternal_night1_idea
+		}
+		if = {
+			limit = {
+				has_completed_focus = NSSR_agrarian_breakthrough
+			}
+			remove_ideas = { NSSR_verge_of_famine_idea }
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_crystal_farming_experiments
+	icon = GFX_farming_crystal
+
+	cost = 11
+	x = -1
+	y = 2
+    relative_position_id = NSSR_nightskys_agrarian_reform
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_unicorn_farmers }
+
+	completion_reward = {
+		remove_ideas = { NSSR_a_dark_tomorrow_idea }
+	}
+}
+
+shared_focus = {
+	id = NSSR_agrarian_breakthrough
+	icon = GFX_agrarian_breakthrough
+
+	cost = 5
+	x = 1
+	y = 1
+    relative_position_id = NSSR_nightskys_agrarian_reform
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_nightskys_agrarian_reform }
+
+	completion_reward = {
+		if = {
+			limit = {
+				has_completed_focus = NSSR_unicorn_farmers
+			}
+			remove_ideas = { NSSR_verge_of_famine_idea }
+		}
+		else = {
+			swap_ideas = {
+				remove_idea = NSSR_verge_of_famine1_idea
+				add_idea = NSSR_verge_of_famine2_idea
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_mechanized_prosperity
+	icon = GFX_mechanized_farming
+
+	cost = 10
+	x = 1
+	y = 2
+    relative_position_id = NSSR_nightskys_agrarian_reform
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_agrarian_breakthrough }
+
+	completion_reward = {
+		add_ideas = { NSSR_mechanized_prosperity_idea }
+	}
+}
+
+shared_focus = {
+	id = NSSR_solidarity_forever
+	icon = GFX_solidarity_forever
+
+	cost = 3
+	x = 0
+	y = 3
+    relative_position_id = NSSR_nightskys_agrarian_reform
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_crystal_farming_experiments }
+    prerequisite = { focus = NSSR_mechanized_prosperity }
+
+	completion_reward = {
+		remove_ideas = NSSR_curse_of_eternal_night_idea
+		add_ideas = NSSR_shine_of_the_northern_star_idea
+	}
+}
+
+shared_focus = {
+	id = NSSR_our_moral_obligation
+	icon = GFX_our_moral_obligation
+
+	cost = 3
+	x = 0
+	y = 1
+    relative_position_id = NSSR_solidarity_forever
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_solidarity_forever }
+
+	completion_reward = {
+		set_country_flag = NSSR_moral_obligation_decisions_flag
+		custom_effect_tooltip = NSSR_moral_obligation_tt
+	}
+}
+
+shared_focus = {
+	id = NSSR_we_are_the_red_army
+	icon = GFX_red_guards_shine
+
+	cost = 2
+	x = 2
+	y = 1
+    relative_position_id = NSSR_the_road_ahead
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_the_road_ahead }
+
+	completion_reward = {
+		add_ideas = { NSSR_red_army_idea }
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 3
+			category = cat_superior_firepower
+			category = cat_mobile_warfare
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_honor_the_red_guards
+	icon = GFX_focus_unknown
+
+	cost = 1
+	x = 0
+	y = 1
+    relative_position_id = NSSR_we_are_the_red_army
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_we_are_the_red_army }
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NSSR_red_army_idea
+			add_idea = NSSR_red_army1_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_the_liberator_of_manehattan
+	icon = GFX_liberator_of_manehattan
+
+	cost = 1
+	x = -1
+	y = 1
+    relative_position_id = NSSR_honor_the_red_guards
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_honor_the_red_guards }
+
+	completion_reward = {
+		create_field_marshal = {
+			name = "Dimitry Pertikov"
+			portrait_path = "gfx/leaders/STG/Pertikov.dds"
+			traits = { pony_race_trait brilliant_strategist aggressive_assaulter organizer thorough_planner offensive_doctrine fortress_buster urban_assault_specialist bearer_of_artillery }
+			skill = 5
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_crimson_skies
+	icon = GFX_crimson_skies
+
+	cost = 4
+	x = -1
+	y = 2
+    relative_position_id = NSSR_honor_the_red_guards
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_the_liberator_of_manehattan }
+
+	completion_reward = {
+		set_technology = {
+			tactical_bomber1 = 1
+		}
+		set_technology = {
+			tactical_bomber2 = 1
+		}
+		set_technology = {
+			CAS1 = 1
+		}
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = cat_battlefield_support
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_the_savior_of_the_griffish_isles
+	icon = GFX_savior_of_the_griffish_isles
+
+	cost = 1
+	x = 1
+	y = 1
+    relative_position_id = NSSR_honor_the_red_guards
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_honor_the_red_guards }
+
+	completion_reward = {
+		hidden_effect = { 
+			every_unit_leader = {
+				if = { 
+					limit = {
+						has_id = 1000
+					}
+				promote_leader = yes
+				}
+			}
+		}
+		custom_effect_tooltip = NSSR_promote_nestor_tt
+	}
+}
+
+shared_focus = {
+	id = NSSR_red_waves_of_revolution
+	icon = GFX_focus_unknown
+
+	cost = 4
+	x = 1
+	y = 2
+    relative_position_id = NSSR_honor_the_red_guards
+
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_the_savior_of_the_griffish_isles }
+
+	completion_reward = {
+		set_technology = {
+			marines = 1
+		}
+		set_technology = {
+			landing_craft = 1
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_an_oath_to_the_people
+	icon = GFX_an_oath_to_the_people
+
+	cost = 2
+	x = 0
+	y = 3
+    relative_position_id = NSSR_honor_the_red_guards
+
+	ai_will_do = {
+		factor = 5
+	}
+
+	available = {
+		has_completed_focus = NSSR_solidarity_forever
+	}
+
+    prerequisite = { focus = NSSR_crimson_skies }
+    prerequisite = { focus = NSSR_red_waves_of_revolution }
+
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = NSSR_shine_of_the_northern_star_idea
+			add_idea = NSSR_shine_of_the_northern_star1_idea
+		}
+	}
+}
+
+shared_focus = {
+	id = NSSR_aerial_inspectations
+	icon = GFX_focus_unknown
+
+	cost = 5
+	x = 0
+	y = 6
+    relative_position_id = NSSR_the_road_ahead
+	ai_will_do = {
+		factor = 5
+	}
+
+    prerequisite = { focus = NSSR_our_moral_obligation }
+    prerequisite = { focus = NSSR_an_oath_to_the_people }
+
+	completion_reward = {
+        country_event = { id = NSSR_event.6 days = 0 }
+	}
+}
