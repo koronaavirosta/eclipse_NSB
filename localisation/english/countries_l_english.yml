@@ -441,6 +441,10 @@ JUN_fascism_ADJ:0 "South States"
 JUN_democratic_ADJ:0 "South States"
 JUN_neutrality_ADJ:0 "Aztlanian"
 JUN_communism_ADJ:0 "South States"
+JUN_anarchy:0 "Southern Anarchy"
+JUN_anarchy_DEF:0 "The Southern Anarchy
+JUN_ANARCHY_ADJ:0 "Pony"
+
 
 CES_neutrality:0 "Keks"
 CES_fascism:0 "Daybreaker Followers"
