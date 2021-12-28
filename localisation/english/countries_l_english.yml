@@ -731,8 +731,8 @@ CHG_neutrality_ADJ:0 "Ditrysian"
 CHG_communism_ADJ:0 "Ditrysian"
 
 
-GBA_neutrality:0 "Nova Griffonia"
-GBA_neutrality_DEF:0 "The Nova Griffonia"
+GBA_neutrality:0 "Kingdom of Nova Griffonia"
+GBA_neutrality_DEF:0 "The Kingdom Nova Griffonia"
 GBA_neutrality_ADJ:0 "Nova Griffonian"
 GBA_fascism:0 "Nova Griffonian Empire"
 GBA_fascism_DEF:0 "The Nova Griffonian Empire"
